@@ -25,8 +25,13 @@ async function run(): Promise<void> {
   const teamsResponse = await get('https://play.battlecode.org/api/0/team/?format=json&ordering=name');
   for (const team of teamsResponse) {
     data.teams[team.id] = team;
-    data.teams[team.id].history = await get(`https://play.battlecode.org/api/0/team/${team.id}/history/?format=json`);
-    data.teams[team.id].history.sort((a, b) => Date.parse(a.date) - Date.parse(b.date));
+
+    if (team.score > -1e6) {
+      data.teams[team.id].history = await get(`https://play.battlecode.org/api/0/team/${team.id}/history/?format=json`);
+      data.teams[team.id].history.sort((a, b) => Date.parse(a.date) - Date.parse(b.date));
+    } else {
+      data.teams[team.id].history = [];
+    }
   }
 
   fs.mkdirSync(path.dirname(dataFile), { recursive: true });
