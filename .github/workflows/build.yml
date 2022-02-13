@@ -21,17 +21,17 @@ jobs:
       - name: Lint
         run: yarn lint
 
-      # - name: Checkout gh-pages
-      #   uses: actions/checkout@v2
-      #   with:
-      #     ref: gh-pages
-      #     path: gh-pages
+      - name: Checkout gh-pages
+        uses: actions/checkout@v2
+        with:
+          ref: gh-pages
+          path: gh-pages
 
       - name: Build
         run: |
-          # mkdir build
-          # mv gh-pages/data.json build/data.json
-          # mv gh-pages/data-timestamp.txt build/data-timestamp.txt
+          mkdir build
+          mv gh-pages/data.json build/data.json
+          mv gh-pages/data-timestamp.txt build/data-timestamp.txt
           yarn build
 
       - name: Deploy
