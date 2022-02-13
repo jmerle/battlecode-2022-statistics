@@ -1,0 +1,59 @@
+// See https://getbootstrap.com/docs/5.0/customize/optimize/#lean-sass-imports for the full list of Bootstrap imports
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/utilities';
+
+@import '~bootstrap/scss/root';
+@import '~bootstrap/scss/reboot';
+@import '~bootstrap/scss/type';
+@import '~bootstrap/scss/containers';
+@import '~bootstrap/scss/grid';
+@import '~bootstrap/scss/tables';
+@import '~bootstrap/scss/buttons';
+@import '~bootstrap/scss/transitions';
+@import '~bootstrap/scss/nav';
+@import '~bootstrap/scss/card';
+@import '~bootstrap/scss/badge';
+@import '~bootstrap/scss/close';
+@import '~bootstrap/scss/modal';
+@import '~bootstrap/scss/spinners';
+
+@import '~bootstrap/scss/utilities/api';
+
+.row {
+  --bs-gutter-x: 12px;
+}
+
+.row > * {
+  margin-top: 12px;
+}
+
+.grid > .row:last-child > *:last-child {
+  margin-bottom: 12px;
+}
+
+table tr > td:first-child {
+  padding-left: 16px;
+}
+
+table tr > td:last-child {
+  padding-right: 16px;
+}
+
+table > tbody > tr:last-child > td {
+  border-bottom: 0;
+}
+
+.nav > .nav-item > .nav-link {
+  border-top: 0;
+  border-radius: 0;
+}
+
+.nav > .nav-item:first-child > .nav-link {
+  border-left: 0;
+}
+
+.nav > .nav-item:last-child > .nav-link {
+  border-right: 0;
+}
