@@ -52,8 +52,7 @@ export function createTeamsTable(
     const row = createElement(tbody, 'tr');
 
     const rankColumn = createElement(row, 'td');
-    rankColumn.classList.add('text-end');
-    rankColumn.style.width = '1px';
+    rankColumn.classList.add('text-end', 'team-number');
     rankColumn.textContent = `${formatNumber(i + 1)}.`;
 
     const linkColumn = createElement(row, 'td');
