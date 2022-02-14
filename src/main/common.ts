@@ -69,16 +69,16 @@ export function createTeamsTable(
         } else {
           badges.push(['US', ['bg-dark']]);
         }
+
+        if (team.mit) {
+          badges.push(['Newbie', ['bg-warning', 'text-dark']]);
+        }
+
+        if (team.high_school) {
+          badges.push(['High School', ['bg-info', 'text-dark']]);
+        }
       } else {
         badges.push(['Non-student', ['bg-danger']]);
-      }
-
-      if (team.mit) {
-        badges.push(['Newbie', ['bg-warning', 'text-dark']]);
-      }
-
-      if (team.high_school) {
-        badges.push(['High School', ['bg-info', 'text-dark']]);
       }
 
       const badgeColumn = createElement(row, 'td');
