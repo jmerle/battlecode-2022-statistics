@@ -152,6 +152,7 @@ function buildTeamDistribution(row: HTMLElement, data: TeamsData): void {
       ['International teams', teams.filter(team => team.student && team.international)],
       ['Newbie teams', teams.filter(team => team.student && team.mit)],
       ['High School teams', teams.filter(team => team.student && team.high_school)],
+      ['Non-student teams', teams.filter(team => !team.student)],
     ]) {
       rows.push([
         label,
