@@ -1,7 +1,7 @@
 # Battlecode 2022 Statistics
 
-[![Build Status](https://github.com/jmerle/battlecode-2022-statistics/workflows/Build/badge.svg)](https://github.com/jmerle/battlecode-2022-statistics/actions?query=workflow%3ABuild)
-[![Scrape Status](https://github.com/jmerle/battlecode-2022-statistics/workflows/Scrape/badge.svg)](https://github.com/jmerle/battlecode-2022-statistics/actions?query=workflow%3AScrape)
+[![Build Status](https://github.com/jmerle/battlecode-2022-statistics/workflows/Build/badge.svg)](https://github.com/jmerle/battlecode-2022-statistics/actions/workflows/build.yml)
+[![Scrape Status](https://github.com/jmerle/battlecode-2022-statistics/workflows/Scrape/badge.svg)](https://github.com/jmerle/battlecode-2022-statistics/actions/workflows/scrape.yml)
 
 This repository contains a [website](https://jmerle.github.io/battlecode-2022-statistics/) that displays some Battlecode 2022 statistics.
 
